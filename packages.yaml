@@ -11,4 +11,3 @@
   copy:
     src: files/config.txt
     dest: /etc/config.txt
-    
