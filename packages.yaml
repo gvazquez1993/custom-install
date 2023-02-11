@@ -1,0 +1,13 @@
+- name: Install packages
+  become: yes
+  apt:
+    name:
+      - nmap
+      - ip-traf
+      - ping
+
+- name: Configure EC2 instances
+  become: yes
+  copy:
+    src: files/config.txt
+    dest: /etc/config.txt
